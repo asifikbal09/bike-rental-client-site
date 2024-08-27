@@ -17,9 +17,11 @@
 .btn {
   color: #ffffff;
   background-color: #f4364f;
+  border-color: #f4364f;
 }
 
 .btn:hover {
 
   background-color: #de2b43;
+  border-color: #de2b43;
 }
