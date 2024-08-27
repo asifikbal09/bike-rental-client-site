@@ -7,3 +7,19 @@
 .font-rajdhani {
   font-family: "Rajdhani", sans-serif;
 }
+
+.primary-color {
+  color: #f4364f,
+
+}
+
+
+.btn {
+  color: #ffffff;
+  background-color: #f4364f;
+}
+
+.btn:hover {
+
+  background-color: #de2b43;
+}
