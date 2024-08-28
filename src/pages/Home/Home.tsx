@@ -1,12 +1,12 @@
-import React from "react";
-import Fqa from "./Fqa";
+
 import Banner from "./Banner";
+import Works from "./Works";
 
 const Home = () => {
   return (
     <div>
-      <h1>This is Home Component</h1>
       <Banner />
+      <Works/>
     </div>
   );
 };
