@@ -1,12 +1,13 @@
-
 import Banner from "./Banner";
+import TopBike from "./TopBike";
 import Works from "./Works";
 
 const Home = () => {
   return (
     <div>
       <Banner />
-      <Works/>
+      <Works />
+      <TopBike />
     </div>
   );
 };

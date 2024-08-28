@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaSearch } from "react-icons/fa";
 import { MdDirectionsBike } from "react-icons/md";
 import { TbHandClick } from "react-icons/tb";
