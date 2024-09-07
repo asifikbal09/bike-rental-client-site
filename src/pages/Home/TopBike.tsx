@@ -26,14 +26,14 @@ const TopBike = () => {
             <div className="flex gap-5">
               <div
                 className="radial-progress"
-                style={{ "--value": 90, color:'#f4364f', padding:'1.25rem' }}
+                style={{ "--value": 90, color:'#f4364f', padding:'1.25rem' }as React.CSSProperties}
                 role="progressbar"
               >
                 <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">90% </span> Motorbike</p>
               </div>
               <div
                 className="radial-progress"
-                style={{ "--value": 80, color:'#f4364f', padding:'1.25rem' }}
+                style={{ "--value": 80, color:'#f4364f', padding:'1.25rem' } as React.CSSProperties}
                 role="progressbar"
               >
                 <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">80% </span> 
@@ -41,7 +41,7 @@ const TopBike = () => {
               </div>
               <div
                 className="radial-progress"
-                style={{ "--value": 60, color:'#f4364f', padding:'1.25rem' }}
+                style={{ "--value": 60, color:'#f4364f', padding:'1.25rem' }as React.CSSProperties}
                 role="progressbar"
               >
                 <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">60% </span> Bicycle</p>
