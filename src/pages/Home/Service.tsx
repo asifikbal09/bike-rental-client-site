@@ -1,3 +1,4 @@
+import CountUp from "react-countup";
 import people from "../../assets/people.png"
 import helmet from "../../assets/racing-helmet.png"
 import velocity from "../../assets/velocity.png"
@@ -12,7 +13,8 @@ return(
         <div className="flex items-center gap-3">
             <img className="h-16" src={people} alt="" />
             <div>
-                <p className="text-3xl font-semibold">55991</p>
+                <p className="text-3xl font-semibold"><CountUp end={55991} /></p>
+                
                 <p>Happy Customers</p>
             </div>
         </div>

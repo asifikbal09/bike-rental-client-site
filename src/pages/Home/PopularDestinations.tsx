@@ -1,4 +1,3 @@
-import React from "react";
 import BikeCart from "../../components/BikeCart";
 
 const PopularDestinations = () => {

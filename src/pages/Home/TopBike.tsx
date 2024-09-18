@@ -1,4 +1,6 @@
-import React from "react";
+import motorbike from "../../assets/progress/motorbike.svg"
+import scooter from "../../assets/progress/scooter.svg"
+import bicycle from "../../assets/progress/bicycle.svg"
 
 const TopBike = () => {
   return (
@@ -17,35 +19,18 @@ const TopBike = () => {
               facere potenti? Incididuntmontes praesent, qui. Venenatis,
               consequuntur nobis pede.
             </p>
-            <p className="mb-10 font-light">
+            <p className="mb-10 font-light max-w-md">
               Harum incidunt mollis natus dui quas, massa irure cursus odit
               molestias nemo a cursus. Metus. Mollit irure posuere eget, sociis,
               aliquip, ipsum tempus turpis. Mollitia, sunt, egestas montes!
               Sollicitudin! Hendrerit rhoncu.
             </p>
-            <div className="flex gap-5">
-              <div
-                className="radial-progress"
-                style={{ "--value": 90, color:'#f4364f', padding:'1.25rem' }as React.CSSProperties}
-                role="progressbar"
-              >
-                <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">90% </span> Motorbike</p>
-              </div>
-              <div
-                className="radial-progress"
-                style={{ "--value": 80, color:'#f4364f', padding:'1.25rem' } as React.CSSProperties}
-                role="progressbar"
-              >
-                <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">80% </span> 
-                Scooter</p>
-              </div>
-              <div
-                className="radial-progress"
-                style={{ "--value": 60, color:'#f4364f', padding:'1.25rem' }as React.CSSProperties}
-                role="progressbar"
-              >
-                <p className="text-white text-sm text-center uppercase font-bold"><span className="text-3xl">60% </span> Bicycle</p>
-              </div>
+            <div className="flex">
+              
+              
+        <img src={motorbike} alt="" />
+        <img src={scooter} alt="" />
+        <img src={bicycle} alt="" />
               
             </div>
           </div>

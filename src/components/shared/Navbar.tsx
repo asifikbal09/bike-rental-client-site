@@ -1,14 +1,26 @@
-import navbarLogo from '../../assets/navbarLogo.png'
+import { Link, NavLink } from "react-router-dom";
+import navbarLogo from "../../assets/navbarLogo.png";
 
 const Navbar = () => {
-  //Home Rental Company Features Shop About Us
+  const activeLinkStyle = ({
+    isActive,
+    isPending,
+  }: {
+    isActive: boolean;
+    isPending: boolean;
+  }) => (isPending ? "pending" : isActive ? "text-[#de2b43]" : "");
+
   const navLink = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink to={"/"} className={activeLinkStyle}>
+          Home
+        </NavLink>
       </li>
       <li>
-        <a>Rental</a>
+        <NavLink className={activeLinkStyle} to={"rental"}>
+          Rental
+        </NavLink>
       </li>
       <li>
         <a>Dashboard</a>
@@ -48,15 +60,19 @@ const Navbar = () => {
             {navLink}
           </ul>
         </div>
-        <a >
-    <img className='w-[10em]' src={navbarLogo} alt="Rideox" />
+        <a>
+          <img className="w-[10em]" src={navbarLogo} alt="Rideox" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className=" text-xl menu menu-horizontal px-1">{navLink}</ul>
+        <ul className=" text-xl menu menu-horizontal px-1 font-medium">
+          {navLink}
+        </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn text-lg">Login</a>
+        <Link to={"login"} className="btn text-lg">
+          Login
+        </Link>
       </div>
     </div>
   );

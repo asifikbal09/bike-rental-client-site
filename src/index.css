@@ -8,6 +8,10 @@
   font-family: "Rajdhani", sans-serif;
 }
 
+body{
+  font-family: "Rajdhani", sans-serif;
+}
+
 .primary-color {
   color: #f4364f,
 
@@ -25,3 +29,9 @@
   background-color: #de2b43;
   border-color: #de2b43;
 }
+
+NavLink{
+  color: #de2b43;
+  font: bold
+}
+
