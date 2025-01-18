@@ -67,7 +67,7 @@ const Footer = () => {
         <div>
           <h2 className="text-3xl font-bold mb-10">About Us</h2>
           <div className="flex flex-col gap-3 mb-5">
-            <Link className=" hover:text-[#f4364f]" to={""}>
+            <Link className=" hover:text-[#f4364f]" to={"contact"}>
               Contact us
             </Link>
             <Link className=" hover:text-[#f4364f]" to={""}>

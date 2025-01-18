@@ -29,7 +29,10 @@ const Navbar = () => {
         <a>Features</a>
       </li>
       <li>
-        <a>About us</a>
+        
+        <NavLink className={activeLinkStyle} to={"about"}>
+          About us
+        </NavLink>
       </li>
     </>
   );

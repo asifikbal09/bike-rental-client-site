@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Link } from "react-router-dom";
 import BRInput from "../../components/form/BRInput";
 import { FieldValues, useForm } from "react-hook-form";
@@ -11,6 +11,7 @@ const SignUp = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  console.log(errors)
 
   const onSubmit = async (data: FieldValues) => {
     const res = await signUpUser({...data,role:"user"})

@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { useLoginUserMutation } from "../../redux/authApi/authApi";
@@ -8,13 +7,14 @@ const Login = () => {
   const {
     register,
     handleSubmit,
+   
     formState: { errors },
   } = useForm();
-
+console.log(errors)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const onSubmit = async (data: any) => {
     const res = await login(data);
-    console.log(res)
+    console.log(res);
   };
 
   return (
