@@ -1,6 +1,6 @@
 import { Phone, MapPin, Globe } from 'lucide-react'
 import PageBanner from '../../components/shared/bannar'
-import MapComponent from '../../components/map/MapComponent';
+
 
 
 const Contact = () => {
@@ -120,7 +120,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <MapComponent />
     </div>
   )
 }
