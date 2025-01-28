@@ -6,6 +6,7 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import BikeDetail from "../pages/BikeDetails/BikeDetail";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
+      {
+        path:"bike-details",
+        element: <BikeDetail />
+      }
     ],
   },
 ]);
